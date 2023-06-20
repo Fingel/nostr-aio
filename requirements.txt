@@ -1,0 +1,4 @@
+secp256k1
+websockets
+pytest
+pytest-cov
