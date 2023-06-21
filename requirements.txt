@@ -1,4 +1,5 @@
 secp256k1
 websockets
+pydantic
 pytest
 pytest-cov
