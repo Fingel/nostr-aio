@@ -1,4 +1,4 @@
-from nostr.key import PrivateKey
+from nostraio.key import PrivateKey
 
 
 def test_generate_new_key():
