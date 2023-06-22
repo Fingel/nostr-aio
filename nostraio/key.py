@@ -33,3 +33,7 @@ class PrivateKey:
     @property
     def raw(self) -> bytes:
         return self.raw_key
+
+    def sign(self, data: bytes) -> bytes:
+        sk = secp256k1.PrivateKey(self.raw_key)
+        return sk.schnorr_sign(data, None, raw=True)

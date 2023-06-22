@@ -17,3 +17,8 @@ def test_instantiate_key():
         pk.public_key.hex
         == "2ed557f5ad336b31a49857e4e9664954ac33385aa20a93e2d64bfe7f08f51277"
     )
+
+
+def test_sign_data():
+    pk = PrivateKey()
+    assert len(pk.sign(b"0")) == 64
